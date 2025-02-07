@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Panorama Tours</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom-theme.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Panorama Tours</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinos.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-whatsapp-btn" href="https://wa.me/59175020600" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5 mt-5">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p class="lead">Estamos aquí para ayudarte a planificar tu próxima aventura</p>
+        </div>
+    </header>
+
+    <!-- Información de Contacto y Formulario -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Información de Contacto -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="mb-4">Información de Contacto</h4>
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Dirección</h5>
+                                    <p class="mb-0">Calle Potosí # 277<br>entre Warnes y Ñuflo de Chávez<br>Santa Cruz de la Sierra, Bolivia</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-phone fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Teléfono</h5>
+                                    <p class="mb-0">+591 75020600</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Email</h5>
+                                    <p class="mb-0">yudylanyjustiniano17@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fas fa-clock fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-1">Horario de Atención</h5>
+                                    <p class="mb-0">Lunes a Viernes: 9:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Formulario de Contacto -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="mb-4">Envíanos un Mensaje</h4>                            
+                            <form action="enviar_contacto.php" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Nombre</label>
+                                        <input type="text" name="nombre" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Apellido</label>
+                                        <input type="text" name="apellido" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Teléfono</label>
+                                        <input type="tel" name="telefono" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Asunto</label>
+                                    <select name="asunto" class="form-select" required>
+                                        <option value="" selected>Selecciona un asunto</option>
+                                        <option value="Consulta sobre destinos">Consulta sobre destinos</option>
+                                        <option value="Reserva de viaje">Reserva de viaje</option>
+                                        <option value="Información de precios">Información de precios</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Mensaje</label>
+                                    <textarea name="mensaje" class="form-control" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h4 class="text-center mb-4">Nuestra Ubicación</h4>
+            <div class="ratio ratio-21x9">
+                <!--
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.8542965881447!2d-63.18297492374608!3d-17.78392087182753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7c3e56b0d05%3A0x36e0d55ef152f6e3!2sCalle%20Potos%C3%AD%2C%20Santa%20Cruz%20de%20la%20Sierra!5e0!3m2!1ses!2sbo!4v1707175062833!5m2!1ses!2sbo" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.44521173800896!2d-63.17699593751119!3d-17.785897257905514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e86c55253135%3A0x9136cd67adcd49d9!2sPanorama%20Tours%20Srl!5e0!3m2!1ses!2sbo!4v1738851530226!5m2!1ses!2sbo" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-section">
+                    <h2 class="footer-logo">Panorama Tours</h2>
+                    <p>Empresa líder en viajes de negocios, turismo y eventos en Bolivia</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/PanoramaToursBO/" target="_blank" class="social-link" title="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Síguenos en Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+59175020600" class="text-white">+591 75020600</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/59175020600" target="_blank" class="text-white">+591 75020600</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:yudylanyjustiniano17@gmail.com" class="text-white">yudylanyjustiniano17@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Potosí # 277 entre las calles Warnes y Ñuflo de Chávez, Santa Cruz de la Sierra</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://panoramatours.com.bo" target="_blank" class="text-white">panoramatours.com.bo</a></p>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Panorama Tours. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

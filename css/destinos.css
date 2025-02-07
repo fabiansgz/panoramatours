@@ -1,0 +1,274 @@
+/* Estilos para las páginas de destinos */
+
+/* Header con imagen de fondo */
+.destino-header {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 76px;
+}
+
+.destino-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Efectos hover en las tarjetas */
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para el acordeón del itinerario */
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.125);
+}
+
+/* Estilos para las imágenes de la galería */
+.gallery-image {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos para las listas de características */
+.list-unstyled li {
+    margin-bottom: 0.75rem;
+}
+
+.list-unstyled i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Estilos para los botones de WhatsApp */
+.btn-whatsapp {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+    color: white;
+}
+
+/* Estilos para los precios */
+.price-tag {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--bs-primary);
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+section h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--bs-primary);
+}
+
+/* Estilos para la información importante */
+.info-box {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.info-box h6 {
+    color: var(--bs-primary);
+    margin-bottom: 1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .destino-header {
+        height: 40vh;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    .gallery-image {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Header con imagen de fondo */
+.destino-header {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 76px; /* Altura del navbar */
+}
+
+.destino-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+
+/* Hover effect para las cards */
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.03);
+}
+
+/* Estilos para la galería de imágenes */
+.gallery-img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el acordeón del itinerario */
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .destino-header {
+        height: 40vh;
+        min-height: 300px;
+    }
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/bolivia-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+}
+
+.filter-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.destino-info {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.destino-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.newsletter-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.newsletter-form .input-group {
+    padding: 0.5rem;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.newsletter-form input {
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.newsletter-form button {
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+}
