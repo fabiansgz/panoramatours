@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="css/custom-theme.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/facebook-section.css">
 </head>
 <body>
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0" nonce="random123"></script>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
@@ -113,20 +118,21 @@
                     <h2 class="footer-logo">
                         <img src="images/logo-texto-blanco.png" height="60" alt="Panorama Tours" class="navbar-logo">
                     </h2>
-                    <p>Empresa líder en viajes de negocios, turismo y eventos en Bolivia</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/PanoramaToursBO/" target="_blank" class="social-link" title="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="Síguenos en Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    
+                    <div class="fb-like-box" 
+                            data-href="https://www.facebook.com/PanoramaToursBO/" 
+                            data-width="320" 
+                            data-show-faces="true" 
+                            data-stream="false" 
+                            data-header="false">
+                    </div>                    
                 </div>
                 <div class="col-md-4 footer-section">
                     <h4>Contacto</h4>
                     <p><i class="fas fa-phone"></i> <a href="tel:+59175020600" class="text-white">+591 75020600</a></p>
                     <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/59175020600" target="_blank" class="text-white">+591 75020600</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:yudylanyjustiniano17@gmail.com" class="text-white">yudylanyjustiniano17@gmail.com</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i> Calle Potosí # 277 entre las calles Warnes y Ñuflo de Chávez, Santa Cruz de la Sierra</p>
-                    <p><i class="fas fa-globe"></i> <a href="https://panoramatours.com.bo" target="_blank" class="text-white">panoramatours.com.bo</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Potosí # 277 entre las calles Warnes y Ñuflo de Chávez, Santa Cruz de la Sierra</p>                    
                 </div>
                 <div class="col-md-4 footer-section">
                     <h4>Enlaces Rápidos</h4>
